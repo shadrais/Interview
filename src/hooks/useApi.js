@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-const useApi = ({ url }) => {
+const useApi = (url) => {
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState([])
   const [error, setError] = useState("")
