@@ -20,7 +20,7 @@ body {
 }
 
 img {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+  backdrop-filter: blur(10px);
   height: 60%;
   border-radius: 8px 8px 0 0;
 }
@@ -31,6 +31,7 @@ img {
   margin: 0 auto;
   color: rgb(87, 167, 207);
   margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
 .text {
