@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react"
 
-const useApi = () => {
+const useApi = ({ url }) => {
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState([])
   const [error, setError] = useState("")
 
   useEffect(() => {
-    // console.log(url)
     const getData = async () => {
       try {
         setLoading(true)
-        const res = await fetch("https://reqres.in/api/users?page=2")
+        const res = await fetch(url)
         const data1 = await res.json()
         setData(data1.data)
         console.log(data1.data)

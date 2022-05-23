@@ -2,7 +2,7 @@ import useApi from "./hooks/useApi"
 import Card from "./Card"
 
 export default function App() {
-  const { loading, error, data } = useApi()
+  const { loading, error, data } = useApi("https://reqres.in/api/users?page=2")
 
   if (loading) {
     console.log(loading)
