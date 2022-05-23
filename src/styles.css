@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  height: 250px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(246, 245, 245, 0.66);
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 3px 2px #e3e3e3;
+}
+
+img {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+  height: 60%;
+  border-radius: 8px 8px 0 0;
+}
+
+.placeHolder {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0 auto;
+  color: rgb(87, 167, 207);
+  margin-top: 1rem;
+}
+
+.text {
+  color: rgb(72, 206, 119);
+  margin: 0 auto;
+  margin-top: 1rem;
+}
